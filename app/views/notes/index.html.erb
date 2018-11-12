@@ -1,0 +1,5 @@
+<h1> Notes Main </h1>
+<% @notes.each do |note| %>
+  <h2><%= note.title %></h2>
+  <%= link_to 'Show Notes', notes_path(notes.id) %>
+<% end %>
