@@ -1,9 +1,8 @@
-<h1> Notes Main </h1>
+<h1> Note Board </h1>
 <% @notes.each do |note| %>
   <h2><%= note.title %></h2>
-  <%= link_to 'Show Notes', note_path(note.id) %>
+  <%= link_to 'Show Note', note_path(note.id) %>
   <%= link_to 'Edit Note', edit_note_path(note) %>
-  <%= link_to 'Home Note', home_path %>
   <%= link_to 'Create New', new_note_path %>
   <%= link_to 'Destroy Note', note, method: :delete %>
   
